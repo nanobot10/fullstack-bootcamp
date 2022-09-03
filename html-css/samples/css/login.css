@@ -1,0 +1,189 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;700&display=swap');
+
+* {
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+.container {
+    display: flex;
+    background-color: #f0f2f6;
+    width: 600px;
+    flex-direction: row;
+    gap: 20px;
+    align-items: center;
+    justify-content: stretch;
+    border-radius: 20px;
+    margin: auto;
+    position: fixed;
+    top: 50%;
+    left: 0;
+    right: 0;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+.title-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 5px; 
+    gap: 5px;
+}
+
+.title {
+    font-weight: 700;
+    font-size: larger;
+}
+
+.subtitle {
+    font-weight: 400;
+    font-size: small;
+}
+
+.image-container {
+    margin: 10px 10px 10px 10px;
+}
+
+.login-image {
+    width: 300px;
+    height: 350px;
+    border-radius: 15px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+    gap: 10px;
+}
+
+form span {
+    text-align: right;
+    font-size: 8pt;
+}
+
+input {
+    background-color: #ffffff;
+    border-radius: 5px;
+    padding: 10px 20px;
+    border: none;
+    outline: none;
+}
+
+.submit-button {
+    background-color: #FF8484;
+    border: none;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.separator {
+    display: flex;
+    width: 100%;
+    gap: 10px;
+}
+
+.separator span {
+    font-size: 8pt;
+}
+
+.separator hr {
+    flex-grow: 1;
+    border: none;
+    border-top: 1px solid white;
+}
+
+.button-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    margin: 10px;
+}
+
+.google-btn {
+    border: none;
+    border-radius: 5px;
+    padding: 2px;
+    cursor: pointer;
+}
+
+.google-btn:hover {
+    opacity: 0.6;
+}
+
+.google-btn picture {
+    width: 35px;
+    height: 35px;
+    background-color: white;
+    border-radius: 2px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.google-btn picture img {
+    width: 75%;
+}
+
+.mac-btn {
+    border: none;
+    background-color: white;
+    border-radius: 5px;
+    padding: 2px;
+    cursor: pointer;
+    width: 45px;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.mac-btn:hover {
+    opacity: 0.6;
+}
+
+.mac-btn picture {
+    width: 25px;
+    height: 25px;
+    background-color: white;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.mac-btn picture img {
+    width: 75%;
+}
+
+.facebook-btn {
+    border: none;
+    border-radius: 5px;
+    padding: 2px;
+    cursor: pointer;
+}
+
+.facebook-btn:hover {
+    opacity: 0.6;
+}
+
+.facebook-btn picture {
+    width: 35px;
+    height: 35px;
+    background-color: white;
+    border-radius: 2px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.facebook-btn picture img {
+    width: 75%;
+}
+
+
+
