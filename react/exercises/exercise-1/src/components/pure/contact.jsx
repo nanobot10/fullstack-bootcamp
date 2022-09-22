@@ -3,23 +3,33 @@ import PropTypes from 'prop-types';
 import { Contact } from '../../models/Contact.class';
 
 
-const ContactComponent = ({ contact }) => {
+const ContactComponent = ({ contact, updateContact, deleteContact }) => {
 
     return (
-        <div>
-            <ul>
-                <li>Name: <small>{contact.name}</small> </li>
-                <li>Lastname: <small>{contact.lastname}</small> </li>
-                <li>Email: <small>{contact.email}</small></li>
-                <li>Connected: <small>{contact.connected ? 'Contacto En Línea' : 'Contacto No Disponible'}</small> </li>
-            </ul>
-        </div>
+       <tr>
+            <td>{contact.name}</td>
+            <td>{contact.lastname}</td>
+            <td>{contact.email}</td>
+            <td>{contact.connected ? 'IN LINE' : 'DISCONNECTED'}</td>
+            <td>
+                {
+                    contact.connected
+                    ?
+                    <i className="fa-solid fa-toggle-on task-action" style={{color: 'green'}} onClick={() => updateContact(contact)}></i>
+                    :
+                    <i className="fa-solid fa-toggle-off task-action" style={{color: 'gray'}} onClick={() => updateContact(contact)}></i>
+                }
+                <i className="fa-solid fa-trash task-action ms-2" style={{color: 'red'}} onClick={() => deleteContact(contact)}></i>
+            </td>
+       </tr>
     );
 };
 
 
 ContactComponent.propTypes = {
-    contact: PropTypes.instanceOf(Contact)
+    contact: PropTypes.instanceOf(Contact).isRequired,
+    updateContact: PropTypes.func.isRequired,
+    deleteContact: PropTypes.func.isRequired
 };
 
 
