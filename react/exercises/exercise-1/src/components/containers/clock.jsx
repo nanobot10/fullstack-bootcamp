@@ -20,8 +20,7 @@ const Clock = () => {
 
     const tick = () => {
         setData({
-            nombre: 'Martin',
-            apellidos: 'San José',
+            ...data,
             edad: data.edad++,
             fecha: new Date()
         })
