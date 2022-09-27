@@ -1,12 +1,12 @@
-import './App.css';
 import './styles/styles.css'
 import ContactList from './components/containers/contact_list';
+import Exercise10 from './components/containers/exercise10';
 
 
 function App() {
   return (
-    <div className="App row">
-      <ContactList/>
+    <div>
+      <Exercise10/>
     </div>
   );
 }
