@@ -5,14 +5,16 @@ import JokePage from './pages/JokePage';
 import TodoContainer from './components/containers/TodoContainer';
 import TodoFormContainer from './components/containers/TodoFormContainer';
 import FilterOptions from './components/pure/FilterOptions';
+import TaskList from './components/Task';
 
 
 function App() {
   return (
     <div>
-      <TodoContainer/>
+      {/* <TodoContainer/>
       <TodoFormContainer/>
-      <FilterOptions/>
+      <FilterOptions/> */}
+      <TaskList/>
     </div>
   );
 }

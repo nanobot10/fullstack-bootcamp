@@ -10,9 +10,9 @@ import { createAppStore } from './store/config/store';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <Provider store={createAppStore()}>
-      <React.StrictMode>
+      
         <App/>
-      </React.StrictMode>
+      
   </Provider>
 );
 
